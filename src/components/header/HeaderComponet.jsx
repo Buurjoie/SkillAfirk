@@ -13,9 +13,9 @@ export default function HeaderComponet() {
       <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-[#8B4513]">
+            <Link to="/" className="text-2xl font-bold text-[#8B4513]">
               Skill<span className="text-[#FF6B35]">Afrik</span>
-            </h1>
+            </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a
