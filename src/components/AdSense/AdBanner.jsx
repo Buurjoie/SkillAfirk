@@ -10,11 +10,11 @@ function AdBanner() {
   }, []);
 
   return (
-  <ins 
+  <ins
      className="adsbygoogle"
      style={{ display: 'block' }}
      data-ad-client="ca-pub-2510660773997180"
-     data-ad-slot="2843455020"
+     data-ad-slot="9625621261"
      data-ad-format="auto"
      data-full-width-responsive="true">
      </ins>

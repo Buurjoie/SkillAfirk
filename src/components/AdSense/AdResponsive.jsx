@@ -12,10 +12,9 @@ export default function AdResponsive() {
   return (
     <ins className="adsbygoogle"
       style={{ display: "block" }}
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot="2345678901"
-      data-ad-format="auto"
-      data-full-width-responsive="true">
+      data-ad-format="autorelaxed"
+      data-ad-client="ca-pub-2510660773997180"
+      data-ad-slot="9607349517">
     </ins>
   );
 }

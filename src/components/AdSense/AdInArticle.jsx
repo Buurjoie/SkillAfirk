@@ -12,10 +12,10 @@ export default function AdInArticle() {
   return (
     <ins className="adsbygoogle"
       style={{ display: "block", textAlign: "center" }}
-      data-ad-format="fluid"
-      data-ad-layout="in-article"
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot="3456789012">
-    </ins>
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2510660773997180"
+     data-ad-slot="6048504182">
+     </ins>
   );
 }

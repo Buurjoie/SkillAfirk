@@ -11,11 +11,11 @@ export default function AdInFeed() {
 
   return (
     <ins className="adsbygoogle"
-      style={{ display: "block" }}
-      data-ad-format="fluid"
-      data-ad-layout-key="-fg+5n+6t-e7+az"
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot="4567890123">
+     style={{ display: "block" }}
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-2510660773997180"
+     data-ad-slot="5859676193">
     </ins>
   );
 }
