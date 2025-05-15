@@ -68,7 +68,7 @@ export default function Accueilpage() {
               <a href='#com' className="px-6 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#e05a2b] transition-colors text-lg font-medium !rounded-button cursor-pointer whitespace-nowrap">
                 Commencer maintenant
               </a>
-              <Link to="/domaines/formation"on className="px-6 py-3 bg-white text-[#8B4513] border border-[#8B4513] rounded-lg hover:bg-[#8B4513] hover:text-white transition-colors text-lg font-medium !rounded-button cursor-pointer whitespace-nowrap">
+              <Link to="/domaines/formation" className="px-6 py-3 bg-white text-[#8B4513] border border-[#8B4513] rounded-lg hover:bg-[#8B4513] hover:text-white transition-colors text-lg font-medium !rounded-button cursor-pointer whitespace-nowrap">
                 Découvrir les formations
               </Link>
             </div>
@@ -364,12 +364,12 @@ export default function Accueilpage() {
                 Rejoignez des milliers d'étudiants à travers l'Afrique qui transforment déjà leur éducation.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button class="bg-white text-[#FF6B35] hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition duration-300">
+                <Link to="/domaines" class="bg-white text-[#FF6B35] hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition duration-300">
                      Commencer maintenant <i class="fas fa-user-plus ml-2"></i>
-                </button>
-                <button class="border-2 border-white hover:bg-white hover:bg-opacity-10 px-8 py-4 rounded-full font-bold text-lg transition duration-300">
+                </Link>
+                <Link to="/domaines/formation" class="border-2 border-white hover:bg-white hover:bg-opacity-10 px-8 py-4 rounded-full font-bold text-lg transition duration-300">
                     Découvrir les formations <i class="fas fa-search ml-2"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>

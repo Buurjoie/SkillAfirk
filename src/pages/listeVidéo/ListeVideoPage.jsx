@@ -131,7 +131,6 @@ export default function ListeVideoPage() {
                 <div className="flex flex-wrap gap-3">
                     <DescripionComp text={videos[currentVideo]?.snippet.description} />
                 </div>
-               <AdBanner />
               </div>
             </div>
 
@@ -236,12 +235,12 @@ export default function ListeVideoPage() {
                   </button>
                 </div>
               </div>
-               <AdBanner />
             </div>
           </section>
         </div>
       </div>
               
+               <AdBanner />
       </main>
        <FooterComponent />
     </div>
