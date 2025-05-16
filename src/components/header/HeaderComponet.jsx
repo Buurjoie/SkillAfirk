@@ -78,7 +78,7 @@ export default function HeaderComponet() {
                 Accueil
               </a>
               <a
-                href="/formations"
+                href="/domaines/formation"
                 className="text-gray-700 hover:text-[#FF6B35] transition-colors py-2 cursor-pointer"
               >
                 Formations
