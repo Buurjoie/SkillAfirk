@@ -8,6 +8,8 @@ import DescripionComp from "../../components/Youtub/DescripionComp";
 import VideoWithComments from "../../components/Youtub/VideoWithComments ";
 import HeaderSeoComp from "../../components/SEO/HeaderSeoComp";
 import AdBanner from "../../components/AdSense/AdBanner";
+import AdInArticle from "../../components/AdSense/AdInArticle";
+import AdInFeed from "../../components/AdSense/AdInFeed";
 
 export default function ListeVideoPage() {
   const [videos, setVideos] = useState([]);
@@ -145,6 +147,7 @@ export default function ListeVideoPage() {
 
             {/* Sidebar - Playlist and Progress */}
             <section className="lg:col-span-1">
+
               {/* Playlist */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden mb-6">
                 <div className="p-4 border-b border-gray-200">
@@ -154,6 +157,7 @@ export default function ListeVideoPage() {
                 </div>
 
                 <div className="p-2 max-h-[500px] overflow-y-auto">
+                  {/* <AdInFeed /> */}
                   <ul className="divide-y divide-gray-100">
                     {videos?.map((video, index) => (
                       <li
@@ -240,6 +244,7 @@ export default function ListeVideoPage() {
                     </button>
                   </div>
                 </div>
+                <AdInArticle />
               </div>
             </section>
           </div>
