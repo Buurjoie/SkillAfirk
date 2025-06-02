@@ -4,6 +4,7 @@ import { searchPlaylists } from '../../libs/youtubData';
 import HeaderComponet from '../../components/header/HeaderComponet';
 import FooterComponent from '../../components/footer/FooterComponent';
 import HeaderSeoComp from '../../components/SEO/HeaderSeoComp';
+import AdBanner from '../../components/AdSense/AdBanner';
 
 
 export default function PlaylistePage() {
@@ -164,6 +165,7 @@ const formations = data.domaines.flatMap((domaine) =>
           )}
         </div>
       </section>
+       <AdBanner />
       </main>
        <FooterComponent />
     </div>
