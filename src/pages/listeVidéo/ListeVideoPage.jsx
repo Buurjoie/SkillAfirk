@@ -8,8 +8,6 @@ import DescripionComp from "../../components/Youtub/DescripionComp";
 import VideoWithComments from "../../components/Youtub/VideoWithComments ";
 import HeaderSeoComp from "../../components/SEO/HeaderSeoComp";
 import AdBanner from "../../components/AdSense/AdBanner";
-import AdInArticle from "../../components/AdSense/AdInArticle";
-import AdInFeed from "../../components/AdSense/AdInFeed";
 
 export default function ListeVideoPage() {
   const [videos, setVideos] = useState([]);
@@ -244,7 +242,6 @@ export default function ListeVideoPage() {
                     </button>
                   </div>
                 </div>
-                <AdInArticle />
               </div>
             </section>
           </div>

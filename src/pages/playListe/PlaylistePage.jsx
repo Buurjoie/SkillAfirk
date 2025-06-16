@@ -5,7 +5,6 @@ import HeaderComponet from '../../components/header/HeaderComponet';
 import FooterComponent from '../../components/footer/FooterComponent';
 import HeaderSeoComp from '../../components/SEO/HeaderSeoComp';
 import AdBanner from '../../components/AdSense/AdBanner';
-import AdInArticle from '../../components/AdSense/AdInArticle';
 
 
 export default function PlaylistePage() {
@@ -151,7 +150,6 @@ const formations = data.domaines.flatMap((domaine) =>
                   </div>
                 </article>
             ))}
-            <AdInArticle />
           </div>
 
           {videos.length === 0 && (
