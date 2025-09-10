@@ -1,34 +1,23 @@
 import React from 'react'
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 
 export default function HeaderSeoComp({formation}) {
+   const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": formation?.title ,
+    "description": formation?.description ,
+    "provider": {
+      "@type": "Organization",
+      "name": "SkillAfrik",
+      "sameAs": "https://skill-afirk.vercel.app"
+    },
+    "url": formation?.url,
+    "image": formation?.image
+  };
   return (
     <>
-      {/* <Helmet>
-                <meta charSet="utf-8" />
-                <title>{title}</title>
-                <link rel="canonical" href="https://skill-afirk.vercel.app/" />
-                <meta name="description" content={desc} />
-                <meta name="keywords" content="gratuite, apprendre un métier en Afrique, formation gratuite pour jeunes, formation, métiers, jeunes, Afrique, en ligne, compétences, reconversion, autodidactes, hors ligne, apprentissage" />
-                 <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "EducationalOrganization",
-                      "name": "SkillAfrik",
-                      "url": "https://skill-afirk.vercel.app",
-                      "logo": "https://skill-afirk.vercel.app/images/logo_mine.png",
-                      "description": "Plateforme de formation professionnelle en ligne pour les jeunes Africains.",
-                      "sameAs": [
-                        "https://facebook.com/skillafrik",
-                        "https://instagram.com/skillafrik"
-                      ]
-                    })}
-                  </script>
-      </Helmet> */}
-
-
-
-       <Helmet>
+       <Helmet prioritizeSeoTags>
         {/* SEO classique */}
         <title>{formation.title} | SkillAfrik</title>
         <meta name="description" content={formation.description} />
@@ -51,6 +40,11 @@ export default function HeaderSeoComp({formation}) {
         <meta name="twitter:title" content={formation.title} />
         <meta name="twitter:description" content={formation.description} />
         <meta name="twitter:image" content={formation.image} />
+
+         {/* JSON-LD Schema.org */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
       </Helmet>
 
     </>
