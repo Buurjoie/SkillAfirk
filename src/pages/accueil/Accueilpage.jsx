@@ -38,10 +38,17 @@ export default function Accueilpage() {
   useEffect(() => {
     fetcheData();
   }, []);
+   
+  const formation = {
+     title : title,
+     description : description,
+     image: "https://skill-afirk.vercel.app/images/logo_mine.png",
+     url : "https://skill-afirk.vercel.app/"
+  };
 
   return (
     <div className="min-h-screen bg-white">
-        <HeaderSeoComp title={title} desc={description} />
+        <HeaderSeoComp formation={formation} />
         <HeaderComponet />
         <main>
            {/* Hero Section */}

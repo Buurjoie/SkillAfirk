@@ -56,6 +56,12 @@ const formations = data.domaines.flatMap((domaine) =>
     getFormation();
   }, []);
 
+  const formations = {
+     title : title,
+     description : description,
+     image: formation[0]?.image,
+     url : `https://skill-afirk.vercel.app/formation/${idFormation}`
+  };
    // affiche le texte correctement
  function  decodeHtmlEntities(text) {
     let parser = new DOMParser();
@@ -77,9 +83,11 @@ const formations = data.domaines.flatMap((domaine) =>
       return formatter.format(date);
    }
 
+   
+
   return (
      <div className="min-h-screen bg-white">
-      <HeaderSeoComp title={title} desc={description} />
+      <HeaderSeoComp formation={formations} />
        <HeaderComponet />
        <main>
          <div className="bg-gradient-to-r from-[#FF6B35] to-[#4c8caf] pt-20 pb-16">

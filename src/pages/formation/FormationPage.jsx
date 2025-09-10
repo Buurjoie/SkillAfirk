@@ -78,11 +78,16 @@ export default function FormationPage() {
           setFormations(filteredDomains);
       };
       
-      
+        const formation = {
+          title : title,
+          description : description,
+          image: "https://skill-afirk.vercel.app/images/logo_mine.png",
+          url : "https://skill-afirk.vercel.app/domaines/formation"
+        };
 
   return (
       <div className="min-h-screen bg-white">
-        <HeaderSeoComp title={title} desc={description} />
+        <HeaderSeoComp formation={formation} />
            <HeaderComponet/>
            <main>
            <section
@@ -100,11 +105,11 @@ export default function FormationPage() {
               Formation en ligne
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Développement Web{" "}
+              Formation{" "}
               <span className="text-orange-500">Professionnel</span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Découvrez nos formations en développement web. Apprenez à coder,
+              Découvrez nos formations dans tout les domaines. Apprenez à coder,
               créer des sites web modernes et maîtrisez les technologies les
               plus demandées sur le marché.
             </p>

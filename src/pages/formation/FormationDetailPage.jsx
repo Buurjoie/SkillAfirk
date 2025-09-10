@@ -47,9 +47,16 @@ const [searchQuery, setSearchQuery] = useState("");
     return matchesSearch && matchesFilter;
   });
 
+    const formation = {
+     title : title,
+     description : description,
+     image: domaines?.image,
+     url : `https://skill-afirk.vercel.app/domaines/formation/${id}`
+  };
+
   return (
     <div className="min-h-screen bg-white">
-      <HeaderSeoComp title={title} desc={description} />
+      <HeaderSeoComp formation={formation} />
         <HeaderComponet/>
         <main>
              {/*  head  */}

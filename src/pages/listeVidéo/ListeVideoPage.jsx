@@ -55,9 +55,16 @@ export default function ListeVideoPage() {
     }
   };
 
+  const formation = {
+     title : title,
+     description : description,
+     image: videos[0]?.snippet.thumbnails.medium?.url,
+     url : `https://skill-afirk.vercel.app/lecture/${idFormation}/${idVideo}`
+  };
+
   return (
     <div className="bg-gray-50 text-gray-900">
-      <HeaderSeoComp title={title} desc={description} />
+      <HeaderSeoComp formation={formation} />
       <HeaderComponet />
       {/* Course Banner */}
       <main>
